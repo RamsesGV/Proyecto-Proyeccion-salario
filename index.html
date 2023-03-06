@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyección de Salarios</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Proyección de Salarios</h1>
+	<table>
+		<tr>
+			<th>Empleado</th>
+			<th>Salario actual</th>
+			<th>Incremento anual (%)</th>
+			<th>Años en la empresa</th>
+			<th>Proyección de salario</th>
+		</tr>
+		<tr>
+			<td>Empleado 1</td>
+			<td><input type="number" id="salario1"></td>
+			<td><input type="number" id="incremento1"></td>
+			<td><input type="number" id="anios1"></td>
+			<td><span id="proyeccion1"></span></td>
+		</tr>
+		<tr>
+			<td>Empleado 2</td>
+			<td><input type="number" id="salario2"></td>
+			<td><input type="number" id="incremento2"></td>
+			<td><input type="number" id="anios2"></td>
+			<td><span id="proyeccion2"></span></td>
+		</tr>
+		<!-- Repetir filas para los otros empleados -->
+	</table>
+	<button onclick="calcularProyecciones()">Calcular proyecciones</button>
+
+	<script src="script.js"></script>
+</body>
+</html>
